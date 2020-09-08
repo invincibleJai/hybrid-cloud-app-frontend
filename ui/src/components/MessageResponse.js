@@ -1,13 +1,6 @@
-import React, { useEffect, useState } from "react";
-import _ from 'lodash';
+import React from "react";
 
-const MessageResponse = () => {
-
-  const [responses, setResponses] = useState([]);
-
-  useEffect(() => {
-    console.log("Responses changed update chart")
-  }, [responses]);
+const MessageResponse = ({responses}) => {
 
   return (
     <div>
